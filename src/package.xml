@@ -4,5 +4,9 @@
         <members>Task_L19_WeatherRest</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>Task_L19_WeatherRestPage</members>
+        <name>ApexPage</name>
+    </types>
     <version>43.0</version>
 </Package>

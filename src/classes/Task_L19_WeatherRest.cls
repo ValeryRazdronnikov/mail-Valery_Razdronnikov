@@ -19,7 +19,8 @@ public class Task_L19_WeatherRest {
                 String temp = '' + day.get('dt_txt');
                 Map<String, Object> main = (Map<String, Object>) day.get('main');
                 Decimal temperature = (Decimal) main.get('temp') - 273.15;
-                temp += ' - ' + temperature;
+                temperature = temperature.setScale(1);
+                temp += ' - ' + temperature + '\u00b0C';
                 List<Object> weather = (List<Object>) day.get('weather');
                 Map<String, Object> weather0 = (Map<String, Object>) weather[0];
                 temp += ' (' + weather0.get('main') + ')';
