@@ -1,7 +1,7 @@
 <apex:page showHeader="true" controller="Task_L19_WeatherRest">
-    <apex:pageBlock >
+    <apex:pageBlock title="Погода в Витебске.">
     	<apex:pageBlockTable value="{!Weather}" var="w">
-        	<apex:column value="{!w}"/>         
+        	<apex:column headerValue="Вот она:" value="{!w}"/>
         </apex:pageBlockTable>
     </apex:pageBlock>
 </apex:page>
